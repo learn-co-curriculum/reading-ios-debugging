@@ -28,9 +28,9 @@ How might this be helpful?
 
 `NSLog` can be used in a few helpful ways:
 
-1) A developer may place an `NSLog` statement at the beginning (or end) of each of their methods such that they can see the program run through it's various processes. This is usually overkill if used throughout the program but might be used selectively when evaluating loops or pieces of code you think might not be running when expected. (See breakpoints below for a more standard alternative.)
+1) A developer may place an `NSLog` statement at the beginning (or end) of each of their methods such that they can see the program run through it's various processes. This is usually overkill if used throughout the program but might be used selectively when evaluating loops or pieces of code you think might not be running when expected. (See the section called "Breakpoints" below for a more standard alternative.)
 
-2) We might want to make sure a variable is being populated as expected (i.e. is not nil, or being populated with an unexpected value or data). While this can be done in the debug console (see the section called "po" below), if we know we will want to regularly check to see how a variable has been populated, this is a more efficient manner in that we only have to type our `NSLog` once.
+2) We might want to make sure a variable is being populated as expected (i.e. is not nil, or being populated with an unexpected value or data). While this can be done in the debug console (see the section called "p / po" below), if we know we will want to regularly check to see how a variable has been populated, this is a more efficient manner in that we only have to type our `NSLog` once.
 
 3) `NSLog` may be used to simply read a data sample downloaded from the web, in order to better understand a large dataset.
 
