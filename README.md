@@ -10,11 +10,11 @@ But how do you get started? Imagine if when you attempted to compile your progra
 
 The command center for debugging is called the "debug console". Combined with the "variable view" this entire section of the IDE is known as the "debug area". We will focus on the Debug Console and some of the tools available to you within it for the time-being. 
 
-![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/screenWithoutDebugConsole.png.png)
+![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/screenWithoutDebugConsole.png)
 
 To access the Debug Console, click the button on the upper left of your toolbar that shows the bottom third of the rectangle highlighted in blue. If you only see a single window, look down at the lower left corner of the IDE and check to see which of the two rectangles are highlighted in blue. We care about the one with the inner blue rectangle on the right.
 
-![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/screenWithDebugConsole.png.png)
+![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/screenWithDebugConsole.png)
 
 
 
