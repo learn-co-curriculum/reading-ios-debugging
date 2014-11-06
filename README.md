@@ -148,7 +148,7 @@ Most frequently used is the `po` command. With `po` you can print the descriptio
 So assuming you have a class with a valid `description` method, you will receive a string-based description of the variable you are inspecting.
 
 
-#######Example
+######Example
 
 ```objc
 //House.h
