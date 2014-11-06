@@ -221,7 +221,7 @@ When you `po` an object such as `myHouse`, you get back the result of the `descr
 ######Debug Console Output
 ![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/memoryAddresses.png)
 
-Therefore, by `po`ing (new word!) `myHouse` and `myMothersHouse`, you could compare the memory addresses and see if they are the same. As you might imagine, this becomes quite useful when you are trying to trace the source of an error coming from a variable's value.
+Therefore, by `p`ing (new word!) `me.house` and `mother.house` and `myFriend.house`, you could compare the memory addresses and see if they are the same. As you might imagine, this becomes quite useful when you are trying to trace the source of an error coming from a variable's value.
 
 ###Next steps
 
