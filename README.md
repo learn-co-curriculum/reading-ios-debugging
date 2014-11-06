@@ -225,4 +225,4 @@ Therefore, by `p`-ing (new word!) `me.house` and `mother.house` and `myFriend.ho
 
 ###Next steps
 
-There are many more useful methods and tools for debugging, from advanced breakpoints and Instruments to third party plug-ins like Facebook's Chisel. Once you become more familiar with the basics, don't hesitate to check out some of the other LLDB tools!
+There are many more useful methods and tools for debugging, from advanced breakpoints and Instruments (an entire xcode tool dedicated to inspecting applications) to third party plug-ins like Facebook's Chisel (which are meant to enhance the functionality of our debugger). Once you become more familiar with the basics, don't hesitate to check out some of the other LLDB (or alternative debuggers) tools!
