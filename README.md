@@ -10,11 +10,11 @@ But how do you get started? Imagine if when you attempted to compile your progra
 
 The command center for debugging is called the "debug console". Combined with the "variable view" this entire section of the IDE is known as the "debug area". We will focus on the Debug Console and some of the tools available to you within it for the time-being. 
 
-![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/screenWithoutDebugConsole.png)
+![](https://github.com/learn-co-curriculum/reading-ios-debugging/blob/master/screenWithoutDebugConsole.png)
 
 To access the Debug Console, click the button on the upper left of your toolbar that shows the bottom third of the rectangle highlighted in blue. If you only see a single window, look down at the lower left corner of the IDE and check to see which of the two rectangles are highlighted in blue. We care about the one with the inner blue rectangle on the right.
 
-![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/screenWithDebugConsole.png)
+![](https://github.com/learn-co-curriculum/reading-ios-debugging/blob/master/screenWithDebugConsole.png)
 
 
 
@@ -51,7 +51,7 @@ Check it out. Once we run our program, our debug console logs the statement.
 
 
 ######Debug Console Output
-![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/example1.png)
+![](https://github.com/learn-co-curriculum/reading-ios-debugging/blob/master/example1.png)
 
 But what if we want to inspect our variables.
 
@@ -65,7 +65,7 @@ NSLog(@"Our first `NSLog` statement that includes a variable, %@", helloWorld);
 
 
 ######Debug Console Output
-![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/example2.png)
+![](https://github.com/learn-co-curriculum/reading-ios-debugging/blob/master/example2.png)
 
 You may include as many variables in your `NSLog` statement as you wish.
 
@@ -81,7 +81,7 @@ helloWorld, aNumber, anArray, aFloat);
 ```
 
 ######Debug Console Output
-![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/example3.png)
+![](https://github.com/learn-co-curriculum/reading-ios-debugging/blob/master/example3.png)
 
 
 
@@ -105,15 +105,15 @@ There is an incredible array (no pun intended) of ways to take advantage of brea
 
 Head to the left side of your screen where you find your "Navigators" and choose the "Breakpoint Navigator"
 
-![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/breakpoints1.png)
+![](https://github.com/learn-co-curriculum/reading-ios-debugging/blob/master/breakpoints1.png)
 
 Then go to the bottom left corner of the screen and click on the "+" icon. When you do this you will have a few options in a small pop-up window. 
 
-![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/breakpoints2.png)
+![](https://github.com/learn-co-curriculum/reading-ios-debugging/blob/master/breakpoints2.png)
 
 Choose "Exception Breakpoint".
 
-![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/breakpoints3.png)
+![](https://github.com/learn-co-curriculum/reading-ios-debugging/blob/master/breakpoints3.png)
 
 With an "All Exceptions" breakpoint, in most cases when you hit a bug in your code, the code will break at the point of the bug, and you will be able to inspect the state of the program at that point. However, if you do not see messages in your debug console, take note of the location, and then continue running the program until the messages appear. Then go back to the code at which the breakpoint "tripped", and read the message in the context of that code.
 
@@ -121,7 +121,7 @@ With an "All Exceptions" breakpoint, in most cases when you hit a bug in your co
 
 Just above the top left of the Variable View (or Debug Console, if you do not have the Variables View open), you will see a series of icons. These is your breakpoints command center, where you can navigate through your breakpoints.
 
-![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/breakpointCommandCenter.png)
+![](https://github.com/learn-co-curriculum/reading-ios-debugging/blob/master/breakpointCommandCenter.png)
 
 These five buttons accomplish the following when pressed, in order from left to right:
 
@@ -181,13 +181,13 @@ So assuming you have a class with a valid `description` method, you will receive
 ```
 
 ######Debug Console Output
-![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/po.png)
+![](https://github.com/learn-co-curriculum/reading-ios-debugging/blob/master/po.png)
 
 ### p
 With an object that implements a description, you can use `p` to print the memory address of that object. Memory addresses are explained in more detail below.
 
 ######Debug Console Output
-![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/p.png)
+![](https://github.com/learn-co-curriculum/reading-ios-debugging/blob/master/p.png)
 
 Combined, these tools are invaluable. Breakpoints + LLDB allow us to effectively `NSLog` our program at runtime! We can see the order in which our code runs and determine where some of its weaknesses may be.
 
@@ -219,7 +219,7 @@ When you `po` an object such as `myHouse`, you get back the result of the `descr
 ```
 
 ######Debug Console Output
-![](https://github.com/flatiron-school-curriculum/reading-ios-debugging/blob/master/memoryAddresses.png)
+![](https://github.com/learn-co-curriculum/reading-ios-debugging/blob/master/memoryAddresses.png)
 
 Therefore, by `p`-ing (new word!) `me.house` and `mother.house` and `myFriend.house`, you could compare the memory addresses and see if they are the same. As you might imagine, this becomes quite useful when you are trying to trace the source of an error coming from a variable's value.
 
