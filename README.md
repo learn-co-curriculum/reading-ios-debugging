@@ -145,7 +145,10 @@ Breakpoints can be removed by either dragging the chevron out of the gutter and 
 
 There is an incredible array (pun intended) of ways to take advantage of breakpoints and using them effectively is a skill that you'll develop over time. One of the most valuable uses of breakpoints that's particularly helpful early on is the "All Exceptions" breakpoint; without an "All Exceptions" breakpoint added to your project, if your code encounters an error that it cannot resolve and subsequently crashes, Xcode will often highlight the location of the error as the `return UIApplicationMain(...);` line in your project's `main.m` file. Xcode rarely gets any less helpful than in this moment.
 
-The "All Exceptions" breakpoint, however, will highlight the last line of code that ran before the application crashed. Combined with a skilled interpretation of the readout in the Console Output Viewer, this can lead to valuable insight about just what's going on in your code.
+![][applicationMain_exception]
+*Encountering an exception breakpoint.*
+
+The "All Exceptions" breakpoint, however, will highlight the last line of code that ran before the application crashed. Combined with a skilled interpretation of the readout in the Console Output Viewer, this can lead to valuable insight about just what's going on in your code. Whenever you experience a crash that brings you to the `return UIApplicationMain(...);` line in the `main.m` file, it can be helpful to turn on the "all exceptions" breakpoint.
 
 #### Activating the "All Exceptions" Breakpoint
 
@@ -162,6 +165,12 @@ In the bottom left corner of the Breakpoint Navigator, select the `+` ("plus") i
 You should see the "All Exceptions" breakpoint added to the list in the Breakpoint Navigator pane.
 
 ![](https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/breakpoints3.png)
+
+Now if you run the same code again, your code editor will instead highlight the line that caused the exception:
+
+![][allExceptionBreakpoint_on]
+*Attempting to write to an immutable dictionary object causes a crash.*
+
 
 ##  The Debug Area Toolbar
 
@@ -228,7 +237,6 @@ In many cases, this will be equivalent to the value the object holds but it may 
 
 ![][usingDebugConsole]
 
-
 [pointbreak]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/pointbreak.gif
 [spiderman]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/spiderman.gif
 [trinity]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/trinity.gif
@@ -236,6 +244,9 @@ In many cases, this will be equivalent to the value the object holds but it may 
 [disabledBreakpoint]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/disabledBreakpoint.png
 [encounteringBreakpoint]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/encounteringBreakpoint.png
 [settingABreakpoint]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/settingABreakpoint.png
+
+[allExceptionBreakpoint_on]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/breakpoint_allExceptionsBreakpoint_on.png
+[applicationMain_exception]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/breakpoint_applicationMain_exception.png
 
 [toolbar_continueExecution]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/toolbar_continueExecution.png
 [toolbar_hideDebugArea]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/toolbar_hideDebugArea.png
