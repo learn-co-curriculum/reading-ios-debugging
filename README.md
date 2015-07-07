@@ -148,7 +148,10 @@ There is an incredible array (pun intended) of ways to take advantage of breakpo
 ![][applicationMain_exception]
 *Encountering an exception breakpoint.*
 
-The "All Exceptions" breakpoint, however, will highlight the last line of code that ran before the application crashed. Combined with a skilled interpretation of the readout in the Console Output Viewer, this can lead to valuable insight about just what's going on in your code. Whenever you experience a crash that brings you to the `return UIApplicationMain(...);` line in the `main.m` file, it can be helpful to turn on the "all exceptions" breakpoint.
+The "All Exceptions" breakpoint, however, will highlight the last line of code that ran before the application crashed. Combined with a skilled interpretation of the readout in the Console Output Viewer, this can lead to valuable insight about just what's going on in your code. Whenever you experience a crash that run a "stack trace" and brings you to the `return UIApplicationMain(...);` line in the `main.m` file, it can be helpful to turn on the "all exceptions" breakpoint.
+
+![][stack_trace]
+*The full readout of a "stack trace" in the Console Output Viewer.*
 
 #### Activating the "All Exceptions" Breakpoint
 
@@ -247,6 +250,7 @@ In many cases, this will be equivalent to the value the object holds but it may 
 
 [allExceptionBreakpoint_on]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/breakpoint_allExceptionsBreakpoint_on.png
 [applicationMain_exception]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/breakpoint_applicationMain_exception.png
+[stack_trace]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/stack_trace.png
 
 [toolbar_continueExecution]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/toolbar_continueExecution.png
 [toolbar_hideDebugArea]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/toolbar_hideDebugArea.png
