@@ -17,7 +17,7 @@
 
 ## What Is Debugging?
 
-"To err is human, to forgive divine." So goes the popular English quote borrowed by Alexander Pope in his *An Essay on Criticism*. The idea in literature originated with the ancient Greeks, appearing in different forms in the writings of Livy and Cicero, and later Augustine of Hippo. For as much as we as programmers are human, however, computers are anything but forgiving.
+"To err is human, to forgive divine." So goes the popular English quote borrowed by Alexander Pope in his *An Essay on Criticism*. The idea in literature originated with the ancient Greeks, appearing in different forms in the writings of Livy and Cicero, and later Augustine of Hippo. For as much as we programmers are human, however, computers are anything but forgiving.
 
 Software development is a precise form of art. Unlike poetry, music, or painting which each possess certain implicit tolerances for errors (which can actually be part of the art itself, e.g. Philip Glass), instructions for computers must be explicitly correct. The punctuation of English can be altered to change its meaning, the rhythm of music survives breaking a chord in dissonance, but a missing semicolon in Objective-C will crash the program.
 
@@ -148,7 +148,7 @@ There is an incredible array (pun intended) of ways to take advantage of breakpo
 ![][applicationMain_exception]
 *Encountering an exception breakpoint.*
 
-The "All Exceptions" breakpoint, however, will highlight the last line of code that ran before the application crashed. Combined with a skilled interpretation of the readout in the Console Output Viewer, this can lead to valuable insight about just what's going on in your code. Whenever you experience a crash that run a "stack trace" and brings you to the `return UIApplicationMain(...);` line in the `main.m` file, it can be helpful to turn on the "all exceptions" breakpoint.
+The "All Exceptions" breakpoint, however, will highlight the last line of code that ran before the application crashed. Combined with a skilled interpretation of the readout in the Console Output Viewer, this can lead to valuable insight about just what's going on in your code. Whenever you experience a crash that runs a "stack trace" and brings you to the `return UIApplicationMain(...);` line in the `main.m` file, it can be helpful to turn on the "all exceptions" breakpoint.
 
 ![][stack_trace]
 *The full readout of a "stack trace" in the Console Output Viewer.*
@@ -219,7 +219,7 @@ The search bar at the bottom right of the Variable Viewer can be used to filter 
 
 If you're wondering what the notation following the `self = (FISAppDelegate *)` variable is in the image above, that's a memory address. The value `0x7fe32052e410` is a [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) number describing where in the computer's RAM the specified variable is stored.
 
-**Advanced:** *Assigned a memory address is part of the functionality performed by* `+alloc` *when initializing a variable.*
+**Advanced:** *Assigning a memory address is part of the functionality performed by* `+alloc` *when initializing a variable.*
 
 Reading memory addresses allows us to disambiguate between different instances of the same type in our code, and especially ones that are not given specific names in our code.
 
