@@ -236,7 +236,7 @@ This command prints the designated variable along with its class type and the va
 
 #### `po`
 
-In many cases, this will be equivalent to the value the object holds but it may also just print the objects memory address. Technically, this command is accessing the description property on the object, so if that property isn't set to anything `po` just prints the memory address.
+In many cases, this will be equivalent to the value the object holds but it may also just print the object's memory address. Technically, this command is accessing the description property on the object, so if that property isn't set to anything `po` just prints the memory address.
 
 ![][usingDebugConsole]
 
