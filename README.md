@@ -266,3 +266,5 @@ In many cases, this will be equivalent to the value the object holds but it may 
 
 [usingDebugConsole]: https://curriculum-content.s3.amazonaws.com/reading-ios-debugging/usingDebugConsole.png
 
+
+<a href='https://learn.co/lessons/reading-ios-debugging' data-visibility='hidden'>View this lesson on Learn.co</a>
